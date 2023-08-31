@@ -4,17 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick, Draw!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Quick, Draw! &#9999;</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs@0.1.7/dist/onnx.min.js"></script>
 </head>
 
 <body>
+    <!-- Header -->
     <header class="container">
         <h1>Quick, Draw!</h1>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <ul class="container">
             <li><a href="#">Home</a></li>
@@ -22,15 +27,23 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <main class="container">
-        <p>Hello! This is my implementation of Google's Quick, Draw! game released in 2016. Google initially used RNNs but I use CNNs for a similar thing.</p>
-        <canvas id="drawCanvas" width="500" height="500"></canvas>
 
+    <!-- Main Content -->
+    <main class="container">
+        <p id="drawLine">
+            Draw: <span id="randomLabel">Leopard</span>! I think you're drawing... <span id="predictedLabel">Leopard</span>!
+        </p>
+        <canvas id="drawCanvas" width="500" height="500"></canvas>
+        <p id="timerLine">Time remaining: <span id="timer">30</span> seconds</p>
     </main>
+
+    <!-- Footer -->
     <footer class="container">
         <p>&copy; 2023 Simon Petre. All rights reserved</p>
     </footer>
-    <script src="main.js"></script>
+
+    <!-- JS Scripts -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

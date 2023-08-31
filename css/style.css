@@ -1,3 +1,5 @@
+/* Reset and Universal Styles */
+
 body,
 h1,
 p,
@@ -8,10 +10,13 @@ ul {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     line-height: 1.6;
     background-color: #ffdad0;
+    font-weight: 400;
 }
+
+
+/* Container */
 
 .container {
     max-width: 1100px;
@@ -19,24 +24,31 @@ body {
     overflow: hidden;
 }
 
+
+/* Header */
+
 header {
     background-color: #ff8563;
     color: #fff8f7;
-    padding: 10px 0;
     text-align: center;
+    padding: 10px 0;
 }
 
 header h1 {
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    margin: 0;
+    font-size: 40px;
+    font-weight: 1000;
 }
 
+
+/* Navigation */
+
 nav ul {
-    padding: 10px 0;
     list-style-type: none;
     text-align: center;
     background-color: #b62700;
+    padding: 10px 0;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -45,36 +57,67 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #ffe1d9;
     padding: 5px 10px;
+    text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #b62700;
+    background-color: #ff8563;
 }
+
+
+/* Main */
 
 main {
     padding: 30px 0;
 }
 
 #drawCanvas {
-    border: 1px solid #ff8563;
-    cursor: crosshair;
-    text-align: center;
-    background: #fff8f7;
-    padding: 0;
     margin: auto;
     display: block;
+    border: 1px solid #ff8563;
+    background: #fff8f7;
+    text-align: center;
+    cursor: crosshair;
 }
+
+
+/* Labels */
+
+#randomLabel,
+#predictedLabel,
+#drawLine,
+#timerLine {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 5px;
+}
+
+#randomLabel,
+#predictedLabel {
+    color: #fff8f7;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #ff8563, 0 0 10px #ff8563, 0 0 15px #ff8563, 0 0 20px #ff8563, 0 0 25px #ff8563;
+    border-radius: 4px;
+}
+
+#drawLine,
+#timerLine {
+    color: #b62700;
+    font-size: 24px;
+}
+
+
+/* Footer */
 
 footer {
     background-color: #b62700;
     color: #fff8f7;
     text-align: center;
     padding: 10px 0;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
