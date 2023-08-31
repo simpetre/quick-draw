@@ -94,7 +94,7 @@ This architecture provides a good balance between computational efficiency and m
 
 ## Scripts
 
-The JavaScript code handles client-side logic, including event handling and real-time doodle prediction. See the `main.js` file for details.
+The JavaScript code handles client-side logic, including event handling and real-time doodle prediction. See the `script.js` file for details.
 
 ## Contributions
 
